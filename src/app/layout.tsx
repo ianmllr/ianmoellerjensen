@@ -4,7 +4,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "ianmoellerjensen",
-  description: "Developer.",
+  description: "Ian Møller Jensen",
 };
 
 export default function RootLayout({

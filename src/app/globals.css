@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #3b3934;
+  --background: #053345;
   --foreground: #171717;
   --font-app: "Courier New", Courier, monospace;
 }
@@ -15,23 +15,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #3b3934;
+    --background: #0c4a6e;
     --foreground: #ededed;
   }
 }
 
 body {
-  background-color: #3b3934;
+  background-color: #053345;
   color: #bfbfbf;
   font-family: var(--font-app), serif;
   margin: 0;
   padding: 0;
-}
-
-
-header {
-  background-color: #000;
-  border-bottom: 2px solid #333;
-  padding-top: 2rem;
-  text-align: center;
 }
