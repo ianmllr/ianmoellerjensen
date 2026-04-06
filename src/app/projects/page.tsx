@@ -16,7 +16,7 @@ const ascii = "                                                                 
 
 export default function Projects() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-start pt-8 dark:bg-cyan-950">
+        <div className="min-h-screen flex flex-col items-center justify-start pt-8 ">
             <header className="mt-8">
                 <AsciiArt text={ascii} />
             </header>

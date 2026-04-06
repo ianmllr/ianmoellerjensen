@@ -16,7 +16,7 @@ export default function ProjectCard({ title, href, description, image }: Project
             <h3 className="font-bold tracking-tight text-gray-900 dark:text-white mb-3 text-lg">
                 {title}
             </h3>
-                <Image className="top-6 right-6" src={image} alt={"Tech-tilbud logo"} height={100} width={100}></Image>
+                <Image className="top-6 right-6 absolute" src={image} alt={"Tech-tilbud logo"} height={100} width={100}></Image>
             <p className="grow mb-4 leading-relaxed text-sm">{description}</p>
             <Link
                 href={href}
