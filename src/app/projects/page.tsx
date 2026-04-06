@@ -2,6 +2,7 @@ import NavItem from "@/components/NavItem";
 import AsciiArt from "@/components/AsciiArt"
 import ProjectCard from "@/components/ProjectCard";
 
+
 const ascii = "                                                                                \n" +
     "                                  ██                                            \n" +
     "                                  ▀▀                           ██               \n" +
@@ -15,16 +16,16 @@ const ascii = "                                                                 
 
 export default function Projects() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-start pt-4">
-            <header>
+        <div className="min-h-screen flex flex-col items-center justify-start pt-8 dark:bg-cyan-950">
+            <header className="mt-8">
                 <AsciiArt text={ascii} />
             </header>
-            <main className="w-full pt-10 max-w-3xl">
-                <nav className="flex flex-col items-center gap-5">
+            <main className="w-full pt-16 max-w-5xl px-4">
+                <nav className="flex flex-col items-center gap-5 mb-10">
                     <NavItem href="/">&lt;- back</NavItem>
                 </nav>
 
-                <nav className="flex flex-col items-center gap-5 mt-6">
+                <div className="grid grid-cols-2 gap-6">
                     <ProjectCard
                         title="Tech-tilbud"
                         href="https://www.tech-tilbud.com/"
@@ -35,10 +36,9 @@ export default function Projects() {
                         should switch every 6 months for their own benefit. Collecting all these discounts and offers and
                         comparing them to each other and to actual market prices provides a genuine view of when there
                         is money to be saved, and that is what Tech-tilbud helps users with."
+                        image={"/tech-tilbud.png"}
                     />
-                </nav>
-
-
+                </div>
 
             </main>
 
